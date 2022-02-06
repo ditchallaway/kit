@@ -1,0 +1,121 @@
+/*! Fixed Back*/
+.raster-bg {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -10;
+    width: 100%;
+    left: 0;
+    background: repeating-linear-gradient( 180deg, transparent, transparent calc(8.33333vw - 1px), rgba(88, 88, 88, 0.1) calc(8.33333vw - 1px), rgba(88, 88, 88, 0.1) 8.33333vw);
+}
+.h-raster-v,
+.raster-bg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+.h-raster-v {
+    background-color: rgba(88, 88, 88, 0.1);
+    width: 1px;
+}
+.rv1 {
+    left: 8.33333vw;
+}
+.rv2 {
+    left: 16.66667vw;
+}
+.rv3 {
+    left: 25vw;
+}
+.rv5 {
+    left: 41.66667vw;
+}
+.rv6 {
+    left: 50vw;
+}
+.rv7 {
+    left: 58.33333vw;
+}
+.rv9 {
+    left: 75vw;
+}
+.rv10 {
+    left: 83.33333vw;
+}
+.rv11 {
+    left: 91.66667vw;
+}
+
+/*! Sticky Front */
+.raster {
+    position: fixed;
+    pointer-events: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.rasterline {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.r-h1 {
+    top: 33.3333vh;
+    top: calc(var(--vh, 1vh) * 33.3333);
+    width: 100%;
+}
+.r-h1,
+.r-h2 {
+    position: absolute;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    height: 1px;
+}
+.r-h2 {
+    top: 66.6666vh;
+    top: calc(var(--vh, 1vh) * 66.6666);
+    width: 100vw;
+}
+.r-v1 {
+    left: 33.3333vw;
+}
+.r-v1,
+.r-v2 {
+    position: absolute;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 1px;
+}
+.r-v2 {
+    left: 66.6666vw;
+}
+
+.st0 {
+    fill: #F2F2F2;
+}
+.st1 {
+    fill: #3F3D56;
+}
+.st2 {
+    opacity: 0.3;
+    fill: #6C63FF;
+    enable-background: new;
+}
+.st3 {
+    fill: #6C63FF;
+}
+.st4 {
+    fill: #FFFFFF;
+}
+.st5 {
+    fill: #FFB8B8;
+}
+.st6 {
+    opacity: 0.1;
+    enable-background: new;
+}
+.st7 {
+    fill: #2F2E41;
+}

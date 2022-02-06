@@ -18,7 +18,7 @@
     
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     
-<div id="page" class="pattern-grid-xl  color-highlight">
+<div id="page" class="pattern-cross-dots-xl ">
     
     <div class="header header-fixed header-logo-center">
         <a href="/" class="header-title">Wax and Skin Care</a>
@@ -29,9 +29,9 @@
     </div>
 
     <div id="footer-bar" class="footer-bar-6">
-        <a href="services.html" ><i class="fa fa-heart"></i><span>Services</span></a>
+        <a href="/" ><i class="fa fa-heart active-nav"></i><span>Services</span></a>
         <a href="#" data-menu="menu-maps"><i class="fa fa-map"></i><span>Directions</span></a>
-        <a href="/" class="circle-nav active-nav"><i class="fa fa-hashtag font-25"></i><span>Welcome</span></a>
+        <a href="../" class="circle-nav "><i class="fa fa-hashtag font-25"></i><span>Welcome</span></a>
         <a href="#" data-menu="menu-contact"><i class="fa fa-user"></i><span>Contact</span></a>
         <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
     </div>
@@ -40,16 +40,14 @@
     <div class="page-content header-clear-medium">
           
 <!--#red Hero-->
-    <div class="card card-style bg-highlight bg-0 mb-4" data-card-height="300">
-        <div class="card-bottom p-3">
-            <h1 class="color-theme hero-title line-height-s">Wax and Skin Care</h1>
-            <p class="hero-address"><i class="fa fa-map-marker mr-2 color-red-dark"></i>1217 Baldy Mountain Rd 201a, Sandpoint, Idaho 83864</p>
-            <div class="tag-cloud pt-2">
-                <span class="font-10 badge bg-highlight color-white">Bikini Wax</span> <span class="font-10 badge bg-highlight color-white">Brazilian Wax</span> <span class="font-10 badge bg-highlight color-white">Brow Tint</span> <span class="font-10 badge bg-highlight color-white">Lash Tint</span>                        <span class="font-10 badge bg-highlight color-white">Lash Extensions</span> <span class="font-10 badge bg-highlight color-white">Facial Treatment</span>
-            </div>
+    <div class="card card-style bg-highlight bg-6 mb-4" data-card-height="300">
+        <div class="card-bottom text-center"> 
+            <h1 class="font-30 color-theme">Services</h1> 
+            <h2 class="font-18 mb-2 color-highlight mt-n2">Body Waxing, Eye Enhancements, Facials</h2> 
+            <p class="boxed-text-xl font-15 color-theme opacity-50 mb-4"> The best esthtetic services in Sandpoint are all right here. </p> 
         </div>
         <div class="card-overlay bg-gradient-fade-small"></div>
-        <div class="card card-style bg-40 m-0 bg-transparent card-overlay-infinite card-blur-image opacity-50" data-card-height="300"></div>
+        <div class="card card-style bg-40 m-0 bg-transparent card-overlay-infinite card-blur-image opacity-30" data-card-height="300"></div>
     </div>
 <!--# End-Hero-->
 
@@ -59,10 +57,10 @@
 <!--cta | end-->
 
 <!--#blue link-stack | start-->
-    <a href="services.html" class="card card-style mb-4 pattern-zigzag-sm col bg-highlight" data-card-height="150">
+    <a href="bodywaxing.html" class="card card-style mb-4 pattern-zigzag-sm col bg-highlight" data-card-height="150">
         <div class="card-center ps-3 col-9 line-height-s">
-            <h1 class="color-white mb-n1 font-26">Services</h1>
-            <p class="color-white opacity-80 mb-0 font-16">Waxing, Eye-Enhancements, Facials.</p>
+            <h1 class="color-white mb-n1 font-26">Body Waxing</h1>
+            <p class="color-white opacity-80 mb-0 font-16">No nicks, no bumps only smooth hair-free skin for up to six weeks</p>
         </div>
         <div class="card-center">
             <span class="icon icon-s float-end bg-theme color-black me-3 rounded-xl"><i class="fa fa-arrow-right"></i></span>
@@ -70,9 +68,9 @@
         <div class="card-overlay bg-black opacity-80"></div>
     </a>
 
-    <a href="#" data-menu="menu-maps" class="card card-style mb-4 pattern-zigzag-sm col bg-highlight" data-card-height="150">
+    <a href="#" data-menu="eye-enhancements.html" class="card card-style mb-4 pattern-zigzag-sm col bg-highlight" data-card-height="150">
         <div class="card-center ps-3 col-9 line-height-s">
-            <h1 class="color-white mb-n1 font-26">Directions</h1>
+            <h1 class="color-white mb-n1 font-26">Eye Enhancements</h1>
             <p class="color-white opacity-80 mb-0 font-16">Easy Turn-By-Turn To Your Appointment.  </p>
         </div>
         <div class="card-center">
@@ -81,9 +79,9 @@
         <div class="card-overlay bg-black opacity-80"></div>
     </a>
 
-    <a href="#" data-menu="menu-contact" class="card card-style mb-4 pattern-zigzag-sm col bg-highlight" data-card-height="150">
+    <a href="#" data-menu="facials.html" class="card card-style mb-4 pattern-zigzag-sm col bg-highlight" data-card-height="150">
         <div class="card-center ps-3 col-9 line-height-s">
-            <h1 class="color-white mb-n1 font-26">Contact</h1>
+            <h1 class="color-white mb-n1 font-26">Facials</h1>
             <p class="color-white opacity-80 mb-0 font-16">Add me to your contacts.</p>
         </div>
         <div class="card-center">
@@ -111,11 +109,12 @@
     <!-- Main Menu--> 
     <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-index"></div>
     
-    <!-- Contact Menu-->
+     <!-- Share Menu-->
     <div id="menu-contact" class="menu menu-box-modal ps-3 pe-3 rounded-m" data-menu-load="menu-contact.html" data-menu-height="550"></div>  
-    
+   
     <!-- Colors Menu-->
     <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+
 
 <!--#green map-->
     <div id="menu-maps" class="menu m-auto menu-box-bottom rounded-m pb-4" data-menu-height="425" >

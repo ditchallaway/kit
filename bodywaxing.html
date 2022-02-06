@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center">
+        <a href="/" class="header-title">Starter</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html" class="active-nav"><i class="fa fa-heart"></i><span>Features</span></a>
+        <a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="/" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+    
+
+    <div class="page-content header-clear-medium">
+
+            <!--#red Hero-->
+            <div class="card card-style mb-4 bg-highlight bg-2" data-card-height="300" style="height: 300px;"> 
+                <div class="card-bottom text-center"> 
+                    <h1 class="font-30 color-theme">Wax</h1> 
+                    <h2 class="font-18 mb-2 color-highlight mt-n2">Body Hair Removal</h2> 
+                    <p class="boxed-text-xl font-15 color-theme opacity-50 mb-4"> The best waxing service in Sandpoint starts right here. </p> 
+                </div>                     
+                <div class="card-overlay bg-gradient-fade-small"></div>  
+            </div>
+            <!--# End-Hero-->
+
+
+            <!--cta | start-->
+            <a href="https://square.site/book/B7XJ5944N8D2T/wax-and-skin-care-sandpoint-id" class="card card-style external-link mb-4 btn btn-lg btn-full font-23 font-600 gradient-highlight rounded-m">Book Online</a> 
+            <!--cta | end-->
+
+
+            <!--wax menu | start-->
+            <div class=" card card-style bg-highlight p-4 mb-4 bg-theme">
+                <script type="text/javascript" src="fetch.js"></script>
+                <table class="table p-4">
+                    <tbody id="wax" class="bg-theme p-4"></tbody>
+                </table>
+                <div class="py-3 row font-6">
+                    <div class="col-6 pb-2 pt-2 px-2 duel-cta-col"><a href="../services/*" class="btn btn-full rounded-s shadow-xl border-highlight color-highlight back-button ">&#11164; Back</a>
+                    </div>
+                    <div class="col-6 pb-2 pt-2 px-2 duel-cta-col"><a href="#" class="btn btn-full btn-border rounded-s shadow-1 gradient-highlight">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--wax menu | end-->
+
+
+        <!-- google-->
+        <div class="card card-style mb-4 ">
+
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+            <div class="elfsight-app-5a1b80e1-1c4f-402d-9abd-beac50cc064e"></div>
+        <div class="divider divider-margins mt-3 mb-2"></div>
+            <!--yelp-->
+            <div class="elfsight-app-7223ce04-cec3-4fb4-b669-0c1b2a1defcc"></div>
+        </div>
+            <!--#-->    
+
+
+    </div>
+    <!-- Page content ends here-->
+    
+    <!-- Main Menu--> 
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
