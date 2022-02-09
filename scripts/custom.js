@@ -1474,12 +1474,42 @@ document.addEventListener('DOMContentLoaded', () => {
         var plugLoc = "plugins/"
 
         let plugins = [
+
           {
             id: 'uniqueID', // to detect if loaded and unload if needed
             plug: 'pluginName/plugin.js', // the main plugin javascript file
             call: 'pluginName/pluginName-call.js', // the plugin call functions
             style: 'pluginName/pluginName-style.css', // the plugin stylesheet
             trigger: '.pluginTriggerClass' // the trigger that will activate the loading and initializing of the plugin
+          },
+          {
+            id: 'elf', // to detect if loaded and unload if needed
+            plug: 'elf/platform.js', // the main plugin javascript file
+            trigger: '#elf' // the trigger that will activate the loading and initializing of the plugin
+          },
+          {
+            id: 'wax', // to detect if loaded and unload if needed
+            plug: 'fetch/fetch.js', // the main plugin javascript file
+            call: 'fetch/wax.js', // the plugin call functions
+            trigger: '#wax' // the trigger that will activate the loading and initializing of the plugin
+          },
+          {
+            id: 'eye1', // to detect if loaded and unload if needed
+            plug: 'fetch/fetch.js', // the main plugin javascript file
+            call: 'fetch/eyes.js', // the plugin call functions
+            trigger: '#eye1' // the trigger that will activate the loading and initializing of the plugin
+          },
+          {
+            id: 'eye2', // to detect if loaded and unload if needed
+            plug: 'fetch/fetch.js', // the main plugin javascript file
+            call: 'fetch/eyes.js', // the plugin call functions
+            trigger: '#eye2' // the trigger that will activate the loading and initializing of the plugin
+          },
+          {
+            id: 'face', // to detect if loaded and unload if needed
+            plug: 'fetch/fetch.js', // the main plugin javascript file
+            call: 'fetch/face.js', // the plugin call functions
+            trigger: '#face' // the trigger that will activate the loading and initializing of the plugin
           },
           {
             id: 'chart',
