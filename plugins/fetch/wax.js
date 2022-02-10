@@ -18,5 +18,4 @@ fetch(
   
           document.getElementById('wax').innerHTML = output;
    
-    
   });
