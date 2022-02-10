@@ -38,8 +38,8 @@ fetch(
             </picture>
             <div class="card-bottom text-end">
                 <a><div class="mb-3 me-3 bg-highlight btn">
-                    Bottom Right<br>
-                    <i class="fa fa-angle-right pt-1 font-30" style="transform:rotate(45deg)"></i>
+                    Bottom Right
+                    
                 </div></a>
             </div>
         </div>
