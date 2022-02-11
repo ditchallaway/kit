@@ -21,7 +21,7 @@ fetch(
    
     
   });
-  
+  let freeBeer = output.replace(/Free/gi, '<span class="badge bg-highlight font-14">Free</span>')
   fetch(
     "https://opensheet.elk.sh/1vkEHHOS4LG7K8jQpYBxA2sJJYfuP07nuku0tvdh-B10/3"
   )
@@ -39,8 +39,8 @@ fetch(
           </tr>
           `;
       });
-  
-          document.getElementById('eye2').innerHTML = output;
+      let freeBeer = output.replace(/Free/gi, '<span class="badge bg-highlight font-14">Free</span>')
+          document.getElementById('eye2').innerHTML = freeBeer;
    
     
   });
