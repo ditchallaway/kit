@@ -15,7 +15,7 @@ fetch(
           </tr>
           `;
       });
-  
-          document.getElementById('wax').innerHTML = output;
+      const freeBeer = output.replace(/Free/gi, '<span class="badge bg-highlight font-14">Free</span>')
+          document.getElementById('wax').innerHTML = freeBeer;
    
   });
