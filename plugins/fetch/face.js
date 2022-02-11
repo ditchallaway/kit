@@ -37,12 +37,14 @@ fetch(
                     <source srcset="images/pictures/skin-script-skin-care-sm.png" media="(max-width: 700px)"> <img src="images/pictures/skin-script-skin-care.png" class="skin-script col-6 ms-3" alt="Skin Script's pareben free skin care products.">
             </picture>
             <div class="card-bottom text-end">
-                <a><div class="mb-3 me-3 bg-highlight btn">
-                    Bottom Right
-                    
-                </div></a>
+                    <a>
+                     <div class="mb-3 me-3 bg-highlight btn">
+                            Bottom Right
+                        
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
         </div>
     </div>
         `;
