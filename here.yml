@@ -1,0 +1,8 @@
+- name: Tag Replacer
+  uses: AlexRogalskiy/github-action-tag-replacer@v2.0.1
+with:
+    prefix: '<!--views:marker:start-->\n'
+    suffix: '\n<!--views:marker:end-->'
+    sourceFile: './data/info.md'
+    placeholder: '<!--views:marker:start-->[\s\S]*?<!--views:marker:end-->'
+    replacement: '<p align="center" style="text-align:center;">Data Block</p>'
