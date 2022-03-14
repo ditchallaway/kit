@@ -1,4 +1,4 @@
-# Source for a local(Sandpoint, Idaho) beauty website
+# Source for a local({{locations.address.administrative_district_level_1}}, Idaho) beauty website
 
 
 ## ToDo

@@ -1,11 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
+
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>{{business}} | {{city}} {{state}} </title>
+<title>{{locations.name}} | {{locations.address.locality}} | {{locations.address.administrative_district_level_1}} </title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,14 +26,14 @@
 <meta name="theme-color" content="#edeefb">
 </head>
     
-<body class="theme-light">
+<body class="theme-light" data-highlight-mint>
     
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     
 <div id="page" class="pattern-grid-xl color-highlight">
     
     <div class="header header-fixed header-logo-center">
-        <a href="/" class="header-title">Wax and Skin Care</a>
+        <a href="/" class="header-title">{{locations.name}}</a>
         <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
         <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
         <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
@@ -53,10 +56,10 @@
 <!--#red Hero-->
     <div class="card card-style bg-highlight bg-0 mb-4" data-card-height="300">
         <div class="card-bottom p-3">
-            <h1 class="color-theme hero-title line-height-s">Wax and Skin Care</h1>
-            <p class="hero-address"><i class="fa fa-map-marker mr-2 color-red-dark"></i>1217 Baldy Mountain Rd 201a, Sandpoint, Idaho 83864</p>
+            <h1 class="color-theme hero-title line-height-s">{{locations.name}}</h1>
+            <p class="hero-address"><i class="fa fa-map-marker mr-2 color-red-dark"></i>{{locations.address.address_line_1}}, {{locations.address.administrative_district_level_1}} {{locations.address.postal_code}}</p>
             <div class="tag-cloud pt-2">
-                <span class="font-10 badge bg-highlight color-white">Bikini Wax</span> <span class="font-10 badge bg-highlight color-white">Brazilian Wax</span> <span class="font-10 badge bg-highlight color-white">Brow Tint</span> <span class="font-10 badge bg-highlight color-white">Lash Tint</span>                        <span class="font-10 badge bg-highlight color-white">Lash Extensions</span> <span class="font-10 badge bg-highlight color-white">Facial Treatment</span>
+                <span class="font-10 badge bg-highlight color-white">{{objects[0]category_data.name}}</span> <span class="font-10 badge bg-highlight color-white">{{objects[1]category_data.name}}</span> <span class="font-10 badge bg-highlight color-white">{{objects[2]category_data.name}}</span> <span class="font-10 badge bg-highlight color-white">{{objects[3]category_data.name}}</span>                        <span class="font-10 badge bg-highlight color-white">{{objects[4]category_data.name}}</span> <span class="font-10 badge bg-highlight color-white">{{objects[5]category_data.name}}</span>
             </div>
         </div>
         <div class="card-overlay bg-gradient-fade-small"></div>
@@ -66,7 +69,7 @@
 
 
 <!--cta | start-->
-    <a href="https://square.site/book/B7XJ5944N8D2T/wax-and-skin-care-sandpoint-id" class="card card-style external-link mb-4 btn btn-lg btn-full font-23 font-600 gradient-highlight rounded-m">Book Online</a> 
+    <a href="https://square.site/book/{{locations.id}}"" class="card card-style external-link mb-4 btn btn-lg btn-full font-23 font-600 gradient-highlight rounded-m">Book Online</a> 
 <!--cta | end-->
 
 <!--#blue link-stack | start-->
@@ -131,18 +134,18 @@
         <div class='responsive-iframe max-iframe'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10619.323537744858!2d-116.5655856!3d48.2868693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd859e872c1f9a599!2sWax%20and%20Skin%20Care!5e0!3m2!1sen!2sus!4v1605313586258!5m2!1sen!2sus"
                 width="850" height="180" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
         <div class="menu-title">
-            <p class="color-highlight">Wax & Skin Care</p>
-            <h1 class="not-gruppo">Sandpoint, Idaho</h1>
+            <p class="color-highlight">{{locations.name}}</p>
+            <h1 class="not-gruppo">{{locations.address.administrative_district_level_1}}, Idaho</h1>
         </div>
         <div class="content mt-n2">
-            <p><i class="fa fa-map-marker color-red-dark mr-2"></i> 1217 Baldy Mountain Rd. #201, Sandpoint, ID 83864
+            <p><i class="fa fa-map-marker color-red-dark mr-2"></i> {{locations.address.address_line_1}}, {{locations.address.locality}}, {{locations.address.administrative_district_level_1}} {{locations.address.postal_code}}
             </p>
             <div class="row">
                 <div class="col-6">
                     <a href="#" class="btn close-menu btn-full btn-m bg-red-dark font-600 rounded-s">MAYBE LATER</a>
                 </div>
                 <div class="col-6">
-                    <a href="https://g.page/kerrie-casey?share" class="btn btn-full btn-m bg-green-dark font-600 rounded-s">LETS GO!</a>
+                    <a href="https://g.page/" class="btn btn-full btn-m bg-green-dark font-600 rounded-s">LETS GO!</a>
                 </div>
             </div>
         </div>

@@ -109,7 +109,7 @@ fetch(
                     <source srcset="images/pictures/skin-script-skin-care-sm.png" media="(max-width: 700px)"> <img src="images/pictures/skin-script-skin-care.png" class="skin-script col-6 ms-3" alt="Skin Script's pareben free skin care products.">
             </picture>
             <div class="card-bottom text-end">
-                <a href="https://square.site/book/B7XJ5944N8D2T/wax-and-skin-care-sandpoint-id" ><div class="mb-3 me-3 bg-highlight btn">
+                <a href="https://square.site/book/B7XJ5944N8D2T/wax-and-skin-care-{{locations.address.administrative_district_level_1}}-id" ><div class="mb-3 me-3 bg-highlight btn">
                 Book Now                  
                 </div></a>
             </div>
